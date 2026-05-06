@@ -1,0 +1,77 @@
+/* @font-face {
+    font-family: horror;
+    src: url(./Storm\ Gust.ttf);
+}
+
+@font-face {
+    font-family: lucy;
+    src: url(./Lucy\ Said\ Ok\ Personal\ Use.ttf);
+}
+
+@font-face {
+    font-family: monu;
+    src: url(./Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: machina;
+    src: url(./NeueMachina-Regular.woff2);
+}
+
+@font-face {
+    font-family: not;
+    src: url(./Ndot-55\ \(1\).otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: monu;
+} */
+
+@font-face {
+    font-family: lucy;
+    src: url(./Lucy\ Said\ Ok\ Personal\ Use.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+div{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1776549821153-070eaa245bc1?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 30%;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: lucy;
+    font-weight: 100;
+    color: #88A8A7;
+}
