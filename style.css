@@ -1,162 +1,150 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'helvetica neue';
-    color: white;
-    font-size: 30px;
-    
 }
 html,
 body {
     height: 100%;
     width: 100%;
 }
+
 main{
     height: 100%;
     width: 100%;
     background-color: black;
     display: grid;
-    gap: 20px;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-columns: 22% 20% 7% 27% 22%;
+    grid-template-rows: 29% 24% 7% 18% 18%;
 
     grid-template-areas: 
-    "top-center top-center top-center"
-    "left-center center-bottom right-center"
-    "left-bottom center-bottom right-bottom"
+    "left-top top-center1 top-center1 top-center2 right-top"
+    "left-top center center center right-top"
+    "left-bottom center center center right-top"
+    "left-bottom center center center right-bottom"
+    "left-bottom bottom-center1 bottom-center2 bottom-center2 right-bottom"
     ;
+    gap: 10px;
 }
 
 
-
-.top-center{
-    background-color: lightseagreen;
-    grid-area: top-center;
-}
-.left-center{
+.left-top{
     background-color: royalblue;
-    grid-area: left-center;
+    grid-area: left-top;
+    border: 2px solid white;
+    border-radius:25px;
+    padding: 30px;
 }
 .left-bottom{
-    background-color: cadetblue;
     grid-area: left-bottom;
-}
-.center-bottom{
     background-color: crimson;
-    grid-area: center-bottom;
+    border: 2px solid white;
+    border-radius:25px;
+    padding: 30px;
 }
-.right-center{
-    background-color: tan;
-    grid-area: right-center;
+.right-top{
+    grid-area: right-top;
+    background-color: palevioletred;
+    border: 2px solid white;
+    border-radius:25px;
+    padding: 30px;
 }
 .right-bottom{
     grid-area: right-bottom;
-    background-color: aqua;
-} */
-
-/* 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'helvetica neue';
-}
-
-html,
-body {
-    height: 100%;
-    width: 100%;
-}
-
-main {
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    display: grid;
-    gap: 20px;
-    grid-template-rows: 10% 60% 30%;
-    grid-template-columns: 25% 25% 50%;
-
-    grid-template-areas: 
-    "header header header"
-    "left-center left-center right"
-    "left-bottom1 left-bottom2 right"
-    ;
-
-}
-
-
-
-.header {
-    background-color: royalblue;
-    grid-area: header;
-}
-
-.left-center {
-    grid-area: left-center;
     background-color: lightseagreen;
+    border: 2px solid white;
+    border-radius:25px;
+}
+.center{
+    grid-area: center;
+    background-color: tan;
+    border: 2px solid white;
+    border-radius:25px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.top-center1{
+    grid-area: top-center1;
+    background-color: lavender;
+    border: 2px solid white;
+    border-radius:25px;
+}
+.top-center2{
+    grid-area: top-center2;
+    background-color: blanchedalmond;
+    border: 2px solid white;
+    border-radius:25px;
+}
+.bottom-center1{
+    grid-area: bottom-center1;
+    background-color: coral;
+    border: 2px solid white;
+    border-radius:25px;
+}
+.bottom-center2{
+    grid-area: bottom-center2;
+    background-color: mediumpurple;
+    border: 2px solid white;
+    border-radius:25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.right {
-    grid-area: right;
-    background-color: cadetblue;
-}
 
-.left-bottom1 {
-    grid-area: left-bottom1;
-    background-color: darkcyan;
-}
-
-.left-bottom2 {
-    grid-area: left-bottom2;
-    background-color: lightcoral;
-} */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'helvetica neue';
-}
-
-html,
-body {
+.circle{
     height: 100%;
-    width: 100%;
+    width: 50%;
+    background: radial-gradient(rgb(255, 233, 236),rgb(255, 166, 181));
+    border-radius: 50%;
+    
+}
+.center img{
+    position: absolute;
+    bottom: 0;
+    height: 800px;
 }
 
-
-main {
-    height: 100%;
-    width: 100%;
+.bottom-center2-div1 h3{
+    font-size: 30px;
+}
+.bottom-center2-div1 p{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.bottom-center2-div1 button{
     background-color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    grid-template-areas:
-        "top-left top-center right"
-        "bottom-left bottom-left right"
-    ;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
 }
 
-.top-left {
-    background-color: royalblue;
-    grid-area: top-left;
+.bottom-center2 img{
+    height: 90%;
 }
 
-.top-center {
-    grid-area: top-center;
-    background-color: crimson;
+.left-top i{
+    font-size: 50px;
 }
 
-.right {
-    grid-area: right;
-    background-color: rgb(20, 220, 217);
+.right-top img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: -10px;
+    border: 2px solid black;
 }
 
-.bottom-left {
-    grid-area: bottom-left;
-    background-color: rgb(220, 20, 187);
+.left-bottom h1{
+    font-size: 40px;
+}
+
+.left-bottom h1 span{
+    font-family: cursive;
 }
