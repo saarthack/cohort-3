@@ -24,3 +24,5 @@ min-width = same as min-width (works on inline-block elements)
 clamp (min,preffered,max)
 
 media queries 
+- width = 300px to sirf 300px pe hi chalega 
+- max-width = 300px ya us se kam width hone pe chalega
