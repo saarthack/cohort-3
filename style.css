@@ -10,33 +10,31 @@ body {
     height: 100%;
     width: 100%;
 }
-
-img {
-    height: 200px;
-    position: absolute;
-
-    animation-name: dora;
-    animation-duration: 2s;
-    animation-delay: 1s;
-
-    animation-fill-mode: forwards;
+.parent{
+    background-color: crimson;
+    display: flex;
+    overflow: hidden;
+}
+.inner{
+    background-color: lightseagreen;
+    display: flex;
+    animation-name: anime;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
     animation-timing-function: linear;
 }
 
-img:hover{
-    animation-play-state: paused;
+h4{
+    background-color: royalblue;
+    padding: 15px;
+    font-size: 20px;
 }
 
-
-@keyframes dora {
+@keyframes anime {
     from{
-        left: 0;
-        rotate: 0;
+        transform: translateX(0);
     }
     to{
-        rotate: 360deg;
-        left: 75%;
+        transform: translateX(-100%);
     }
 }
