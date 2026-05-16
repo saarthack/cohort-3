@@ -9,33 +9,44 @@ body {
     height: 100%;
     width: 100%;
 }
-nav{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(30, 8, 67);
-    gap: 20px;
+body{
+    background-color: black;
 }
-
-h4{
+button{
+    padding: 15px 30px;
     font-size: 20px;
-    position: relative;
-}
-
-h4::after{
-    content: "";
-    height: 3px;
-    width: 0%;
-    background-color: red;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 50px;
+    background-color: transparent;
+    border: 2px solid rgb(0, 191, 255);
+    color: rgb(0, 191, 255);
+    border-radius: 5px;
+    font-weight: 600;
     transition: all ease 0.3s;
+
+    position: relative;
+    overflow: hidden;
 }
 
-h4:hover::after{
-    width: 100%;
+button::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 191, 255);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 50%;
+    z-index: -1;
+
+    transition: all ease 0.4s;
+}
+
+button:hover::after{
+    transform: translate(-50%,-50%) scale(3.5);
+}
+
+button:hover{
+    color: white;
 }
