@@ -9,44 +9,7 @@ body {
     height: 100%;
     width: 100%;
 }
-body{
-    background-color: black;
-}
-button{
-    padding: 15px 30px;
-    font-size: 20px;
-    margin: 50px;
-    background-color: transparent;
-    border: 2px solid rgb(0, 191, 255);
-    color: rgb(0, 191, 255);
-    border-radius: 5px;
-    font-weight: 600;
-    transition: all ease 0.3s;
 
-    position: relative;
-    overflow: hidden;
-}
-
-button::after{
-    content: "";
-    height: 50px;
-    width: 50px;
-    background-color: rgb(0, 191, 255);
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(0);
-    border-radius: 50%;
-    z-index: -1;
-
-    transition: all ease 0.4s;
-}
-
-button:hover::after{
-    transform: translate(-50%,-50%) scale(3.5);
-}
-
-button:hover{
-    color: white;
+h1{
+    font-size: 50px;
 }
